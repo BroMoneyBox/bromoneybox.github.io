@@ -1,0 +1,90 @@
+/* -----------------------------------------------------------------------
+타이포그래피 설정
+----------------------------------------------------------------------- */
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0; padding: 0;
+    font-family: 'BookkMyungjo-Bd';
+    background-color: #FBC8B3;
+    color: white;
+}
+
+/* -----------------------------------------------------------------------
+header 영역 - 로고, 메인메뉴
+----------------------------------------------------------------------- */
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #593E98;
+    z-index: 10000;
+}
+
+#logo {
+    position: absolute;
+    padding-left: 842px;
+    top: -43px;
+}
+#logo img {
+    width: 237px;
+}
+#navmenu {
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    padding-right: 10px;
+}
+#navmenu p {
+    margin: 0 10px;
+}
+#navmenu a {
+    color: #fff;
+}
+#navmenu a:link {
+    text-decoration: none;
+}
+#navmenu a:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+/* -----------------------------------------------------------------------
+본문 영역
+----------------------------------------------------------------------- */
+#main-container {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 100%;
+    margin-top: 32px;
+}
+#picture {
+    padding-left: 180px;
+    top: 223px;
+}
+#picture img {
+    width: 760px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+#description {
+    padding-top: 10px;
+    padding-left: 160px;
+    line-height: 130%;
+}
+#title {
+    font-size: 36px;
+}
+#sub-title {
+    font-size: 20px;
+    line-height: 160%;
+}
